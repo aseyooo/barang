@@ -85,14 +85,19 @@
       </div>
     </section>
     
-	     <!-- pengen di looping sampek piro gaek genti lebih kecil dari ne -->
-    <?php for ($i = 0; $i < 7; $i++) : ?>
-        <div>
-            <!-- isi div sg kate di looping -->
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius labore suscipit facilis velit? Commodi dignissimos soluta excepturi, eveniet fugiat omnis!
-        </div>
-    <?php endfor; ?>
-<!-- tapine iki looping biasa duduk contoh looping di dalam looping aku ga reti koyok pie -->
+	     <!-- berati cobak gae iki -->
+<?php
+// ngisi variabel sek trus ngkok dipanggil gae foreach
+$variabel = [["var1"], ["var2", "var3"]]
+
+?>
+<?php foreach ($variabel as $var) : ?>
+    <div style="background-color: lime;">
+        <?php foreach ($var as $v) : ?>
+            <?= $v ?>
+        <?php endforeach; ?>
+    </div>
+<?php endforeach; ?>
 	    
     <footer>
       <p>Web programing by : N.R wahyuni</p>
