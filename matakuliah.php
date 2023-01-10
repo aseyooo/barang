@@ -85,6 +85,20 @@
       </div>
     </section>
     
+	     <!-- berati cobak gae iki -->
+<?php
+// ngisi variabel sek trus ngkok dipanggil gae foreach
+$variabel = [["var1"], ["var2", "var3"]]
+
+?>
+<?php foreach ($variabel as $var) : ?>
+    <div style="background-color: lime;">
+        <?php foreach ($var as $v) : ?>
+            <?= $v ?>
+        <?php endforeach; ?>
+    </div>
+<?php endforeach; ?>
+	    
     <footer>
       <p>Web programing by : N.R wahyuni</p>
     </footer>
